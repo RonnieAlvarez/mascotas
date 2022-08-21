@@ -167,3 +167,32 @@ ul.menu-footer {
   ul.menu-footer li  a {
     color: rgb(255, 255, 255);
 }
+.card-body{
+  padding:1rem;
+  line-height: 1.5rem;
+}
+
+@media (max-width:1100px) {
+  .card-body{
+    padding:0%;
+    height: 30%;
+    font-size: 1rem;
+}
+}
+
+@media (max-width:780px) {
+  .card-body{
+    padding:0%;
+    height: 25%;
+ 
+    font-size: 1rem;
+}
+}
+
+@media (max-width:600px) {
+    .card-body{
+      padding:0%;
+      height: 30%;
+      font-size: small;
+  }
+}
