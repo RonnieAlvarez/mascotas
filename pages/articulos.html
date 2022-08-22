@@ -91,7 +91,7 @@
 
           <div class="container-sm border border-success border-3 rounded-3 bg-light">   
             <div class="card-group mt-3 mb-3 ">
-        
+              <div class="loader"></div>
               <div class="card text-center me-2 ">
                 <div class="card-body">
                   <img  class="card-img-top rounded-4 img-fluid" src="../img/ropa_mascota_p.jpg" alt="">
@@ -232,6 +232,15 @@
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
       return new bootstrap.Tooltip(tooltipTriggerEl)
     })</script>
+    /* inicia script para el spinner */
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script type="text/javascript">
+  $(window).load(function() {
+      $(".loader").fadeOut("slow");
+  });
+  </script>
+/* fin script spinner */
 </body>
 
 </html>

@@ -96,7 +96,7 @@
                   <div class="card-body p-0">
                     <div class="row g-0">
                       <div class="col-sm-6 d-none d-sm-block bg-image">
-                        <i class="fa-solid fa-spinner"></i>
+                        <div class="loader"></div>
                       </div>
                       <div class="col-sm-6 p-4">
                         <div class="text-center">
@@ -248,6 +248,15 @@
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
       return new bootstrap.Tooltip(tooltipTriggerEl)
     })</script>
+/* inicia script para el spinner */
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script type="text/javascript">
+  $(window).load(function() {
+      $(".loader").fadeOut("slow");
+  });
+  </script>
+/* fin script spinner */
 </body>
 
 </html>

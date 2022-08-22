@@ -79,7 +79,8 @@
     </div>
     <div class="container mt-2">
   </header>
-<!-- <section vh-100 m-0 row justify-content-center align-items-center> -->
+  <div class="loader"></div>
+
   <main class="container border position-relative bg-success bg-opacity-25">
     <div class="position-absolute top-50 start-50 translate-middle">
       <div class="row">
@@ -211,7 +212,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
     integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
     crossorigin="anonymous"></script>
+    /* inicia script para el spinner */
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
+<script type="text/javascript">
+  $(window).load(function() {
+      $(".loader").fadeOut("slow");
+  });
+  </script>
+/* fin script spinner */
 </body>
 
 </html>

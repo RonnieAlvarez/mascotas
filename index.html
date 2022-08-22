@@ -15,7 +15,7 @@
 </head>
 
 <body class="container d-flex flex-column h-100 bg-success bg-opacity-25">
-
+  
   
   <header>
     <div class="row">
@@ -27,6 +27,7 @@
           <div class="container justify-content-center">
             <nav class="navbar navbar-expand-md">
               <div class="container-fluid">
+                <div class="loader"></div>
                 <a class="navbar-brand" href="#"><img src="./img/paw_print.svg" width="20rem" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                   data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
@@ -207,9 +208,13 @@
     integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
     crossorigin="anonymous"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-
-
+    <script type="text/javascript">
+      $(window).load(function() {
+          $(".loader").fadeOut("slow");
+      });
+      </script>
 </body>
 
 </html>
